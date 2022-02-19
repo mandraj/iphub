@@ -1,0 +1,22 @@
+.consultation {
+    background: url("../img/app_bg.jpg") center (center/cover) no-repeat;
+    padding: 50px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    &__title {
+        margin-top: 80px;
+        color: #FFFFFF;
+        line-height: 135%;
+    }
+    &__descr {
+        color: #FFFFFF;
+        line-height: 160%;
+    }
+    &__btn {
+        background: #1B1B1B;
+        margin-top: 44px;
+    }
+}

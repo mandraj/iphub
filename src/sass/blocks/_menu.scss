@@ -1,0 +1,103 @@
+.menu-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 27, 27, 0.8);
+    top: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 1000;
+    &_active {
+        transition: all .5s ease;
+        transform: translateX(0%);
+    }
+}
+
+.menu {
+    position: relative;
+    background: url("../img/main_bg.jpg") center (center/cover) no-repeat;
+    height: 100%;
+    margin-left: 163px;
+    padding: 70px 66px 177px 120px;
+
+    &__close {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 20px;
+        right: 20px;
+        width: 46px;
+        height: 46px;
+        padding: 9px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 28.28px;
+            height: 2px;
+            background: #fff;
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:last-child {
+                position: absolute;
+                /* left: 0px;
+                bottom: 17.05px; */
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+
+    }
+
+    .nav {
+        &-link {
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__info {
+        margin-left: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__descr {
+        color: #5C5C5C;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &-link {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    &__addr {
+        color: #8A8A8A;
+        font-weight: normal;
+        font-size: 14px;
+        width: 250px;
+        margin-top: 5px;
+    }
+
+    &__img {
+        margin: 120px 0 0 160px;
+        img {
+            width: 450px;
+            height: 450px;
+        }
+        
+    }
+}

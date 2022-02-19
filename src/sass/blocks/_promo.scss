@@ -1,0 +1,121 @@
+.promo {
+    background: url("../img/main_bg.jpg") center (center/cover) no-repeat;
+}
+.property {
+    display: flex;
+    
+    &__info {
+        margin-top: 109px;
+    }
+    &__legend {
+        color: #8A8A8A;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__title {
+        margin-top: 26px;
+        color: #FFF;
+        font-family: 'STIX Two';
+        font-weight: 500;
+        font-size: 55px;
+        .quot {
+            transform: rotateY(180deg);
+        }
+        span {
+            font-family: STIX Two Text;
+            font-style: italic;
+        }
+    }
+    &__descr {
+        margin-top: 16px;
+        line-height: 160%;
+        color: #8A8A8A;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    &__services {
+        
+        margin-left: 36px;
+    }
+
+    &__img {
+        img {
+            width: 544px;
+            height: 513px;
+        }
+    }
+}
+
+
+.experience {
+    display: flex;
+    margin-top: 200px;
+    &__img {
+        margin-right: 48px;
+        img {
+            object-fit: contain;
+            width: 396px;
+            height: 430.9px;
+        }
+    }
+
+    &__title {
+        color: #FFF;
+    }
+
+    &__descr {
+        color: #8A8A8A;
+        line-height: 160%;
+    }
+
+    &__cards {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
+    &__card {
+        width: 46%;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border: 1px solid;
+        border-image-source: linear-gradient(118.25deg, #DA4533 0%, rgba(218, 69, 51, 0) 33.76%);
+        padding: 20px;
+        &-partners {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: brightness(.5);
+            &:hover {
+                filter: none;
+            }
+        }
+        &-partner {
+            width: 70%;
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        &-count {
+            color: #FFFFFF;
+            font-family: 'STIX Two';
+            font-weight: 500;
+            font-size: 36px;
+        }
+        &-descr {
+            color: #8A8A8A;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            margin-top: 6px;
+        }
+    }
+}

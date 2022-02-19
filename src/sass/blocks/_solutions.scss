@@ -1,0 +1,92 @@
+.solutions {
+    padding: 160px 0;
+    background: url("../img/dec_bg.jpg") center (center/cover) no-repeat;
+    &__title {
+        color: #1B1B1B;
+    }
+    &__descr {
+        display: inline-block;
+        width: 700px;
+        color: #8A8A8A;
+    }
+
+    &__slider {
+        margin-top: 50px;
+    }
+    &__slide {
+        position: relative;
+        max-height: 400px;
+        background: #1B1B1B;
+        border-radius: 8px;
+        padding: 20px;
+        transition: all .5s ease;
+        cursor: pointer;
+        &:hover {
+            .solutions__slide-descr {
+                color: #FFFFFF;
+                transition: all .5s ease;
+                transform: translateY(-45px);
+            }
+            .solutions__slide-text {
+                visibility: visible;
+                transition: all 1s ease;
+                transform: translateY(-40px);
+            }
+            .solutions__slide-shape {
+                transition: all .5s ease;
+                filter: brightness(1);
+            }
+            .solutions__slide-img {
+                transition: all .5s ease;
+                filter: brightness(0.5);
+                transform: scale(0.9);
+            }
+        }
+        &-shape {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            filter: brightness(0.5);
+        }
+        &-img {
+            display: block;
+            margin: 61px auto 65px;
+            &:nth-child(2) {
+                width: 155px;
+                height: 175px;
+            }
+        }
+        &-descr {
+            color: #8A8A8A;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        &-text {
+            visibility: hidden;
+            color: #8A8A8A;
+            font-weight: normal;
+            font-size: 14px;
+            transform: translateY(43px);
+        }
+    }
+    &__btns {
+        position: absolute;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__services {
+        &_mobile {
+            display: none;
+            margin: 40px auto 0;
+            width: 129px;
+            height: 39px;
+            padding: 9px 10px
+        }
+    }
+}

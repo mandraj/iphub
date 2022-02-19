@@ -1,0 +1,72 @@
+.header {
+    min-height: 70px;
+    background: #1B1B1B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 22px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contacts {
+    &__phone {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 18px;
+        &:hover {
+            text-decoration: none;
+            color: #DA4533;
+        }
+    }
+    &__consultation {
+        margin-left: 20px;
+        color: #DA4533;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            color: #FFF;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    &__link {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 29px;
+        &:hover {
+            color: #DA4533;
+        }
+    }
+}
+
+.hamburger {
+    width: 46px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 3px 9px;
+    &__line {
+        margin-bottom: 9px;
+        background: #FFF;
+        width: 23px;
+        height: 2px;
+        &:nth-child(2) {
+            width: 28px;
+        }
+        &:nth-child(3) {
+            width: 17px;
+            margin-bottom: 0;
+        }
+    }
+}

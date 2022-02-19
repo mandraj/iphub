@@ -1,0 +1,36 @@
+@import 'base/null.scss';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import 'libs/fonts';
+@import 'libs/swiper';
+@import 'blocks/btns';
+@import 'blocks/titles';
+@import 'blocks/descr';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/solutions';
+@import 'blocks/quiz';
+@import 'blocks/case';
+@import 'blocks/team';
+@import 'blocks/team';
+@import 'blocks/consultation';
+@import 'blocks/footer';
+@import 'blocks/content';
+@import 'blocks/faq';
+@import 'blocks/sol-page';
+@import 'blocks/menu';
+@import 'blocks/modal';
+@import 'blocks/media';

@@ -1,0 +1,55 @@
+.cases {
+    padding: 160px 0;
+    background: url("../img/case_bg.jpg") center (center/cover) no-repeat;
+    &__title {
+        color: #FFFFFF;
+    }
+
+    &__slider {
+        position: relative;
+        margin-top: 50px;
+        min-height: 369px;
+    }
+
+    &__slide {
+        background: rgba(255, 255, 255, 0.05);
+        /* height: 289px; */
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            .solutions__slide-shape {
+                transition: all .5s ease;
+                filter: brightness(1);
+            }
+        }
+        &-logo {
+            background: rgba(255, 255, 255, 0.05);
+            height: 100%;
+            padding: 124px 59px;
+        }
+        &-info {
+            padding: 75px 20px 47px;
+            height: 100%;
+        }
+        &-title {
+            color: #F9F9F9;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+        }
+        &-descr {
+            color: #8A8A8A;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 165%;
+        }
+    }
+    &__btns {
+        position: absolute;
+        bottom: 0;
+    }
+}

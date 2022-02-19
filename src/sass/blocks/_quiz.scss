@@ -1,0 +1,108 @@
+.quiz {
+    background: url("../img/quiz_bg.jpg") center (center/cover) no-repeat;
+    padding: 160px 0;
+    &__title {
+        color: #FFF;
+    }
+    &__descr {
+        color: #FFF;
+    }
+
+    &__form {
+        width: 85%;
+        background: #1B1B1B;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 40px;
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title {
+            color: #FFF;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        &-count {
+            color: #FFF;
+            font-weight: 500;
+            font-size: 36px;
+            span {
+                color:#DA4533;;
+            }
+        }
+
+        &-answers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        &-answer {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            width: 49%;
+            cursor: pointer;
+            input {
+                display: none;
+            }
+            &_active {
+                background: #DA4533;
+            }
+            &:hover {
+                .quiz__form-label {
+                    color: #DA4533;
+                }
+            }
+        }
+        &-label {
+            font-weight: 500;
+            font-size: 16px;
+            color: #F9F9F9;
+        }
+
+        &-btns {
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-btn {
+            img {
+                transform: scale(-1) translateY(50%);
+                left: -15px;
+                bottom: -50%;
+            }
+        }
+    }
+
+    &__text {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    &__bonuses {
+        display: flex;
+        margin-top: 25px;
+        gap: 20px;
+        &-item {
+            display: flex;
+            align-items: center;
+            background: #1B1B1B;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 392px;
+        }
+        &-descr {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+    }
+}
